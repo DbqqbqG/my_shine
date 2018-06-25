@@ -3,4 +3,5 @@ nginx -s
 	quit	
 	reload
 	reopen
+ps -ax | grep nginx - просмотр запущенных процессов
 
