@@ -1,0 +1,29 @@
+'apt-get install apache2;systemctl enable apache2;systemctl start apache2;
+mkdir /var/www/EXAMPLE.NET;chmod -R 755 /var/www;cd var/www/EXAMPLE.NET;>index.php;
+cd /etc/apache2/sites-available;>EXAMPLE.NET.conf'
+	
+	<VirtualHost *:80>
+ServerName test.site
+ServerAlias www.test.site
+ServerAdmin webmaster@localhost
+DocumentRoot /var/www/test.site/public_html
+ErrorLog ${APACHE_LOG_DIR}/error.log
+CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>		 
+
+'a2ensite EXAMPLE.NET.conf;systemctl restart apache2;cd /etc;nano hosts'
+
+	127.0.0.1 EXAMPLE.NET
+'a2enmod ssl;a2ensite default-ssl;systemctl restart apache2;'
+
+
+'apt-get install php*;nano /etc/php/7.0/apache2/php.ini'
+	display_errors=On
+
+'apt-get install mariadb-server mariadb-client;mysql_secure_installation'
+
+'apt-get install phpmyadmin php-mbstring php-gettext'
+
+'cd /etc/apache2/apache2.conf'
+	include /etc/phpmyadmin/apache.conf
+

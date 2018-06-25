@@ -1,0 +1,6 @@
+nginx -s
+	stop
+	quit	
+	reload
+	reopen
+
