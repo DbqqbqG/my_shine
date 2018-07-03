@@ -1,3 +1,0 @@
-apt-get install lighthttpd php7-cgi; - Установка
-nano /etc/php/7.2/cgi/php.ini; 
-    cgi.fix_pathinfo = 1 - Вставить строку в конец файла
