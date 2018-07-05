@@ -1,0 +1,7 @@
+sudo apt update
+sudo apt install apache2
+sudo ufw app list --- проверка настройки файрвола
+sudo ufw app info "Apache Full" --- просмотр открытых портов
+sudo ufw allow in "Apache Full" --- разрешение входящего трафика
+
+

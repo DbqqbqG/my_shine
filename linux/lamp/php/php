@@ -1,0 +1,3 @@
+sudo apt install php libapache2-mod-php php-mysql
+nano /etc/php/7.0/apache2/php.ini --- настройка отображения ошибок
+        display_errors=On

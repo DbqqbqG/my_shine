@@ -1,0 +1,11 @@
+sudo nano /etc/apache2/conf-available/phpmyadmin.conf --- включение файла htaccess
+<Directory /usr/share/phpmyadmin>
+    Options FollowSymLinks
+    DirectoryIndex index.php
+    AllowOverride All --- необходимо добавить строку
+    . . .
+
+
+
+sudo mkdir /etc/phpmyadmin/.htapasswd --- создание файла с поролем
+sudo htpasswd -c /etc/phpmyadmin/.htpasswd USERNAME 

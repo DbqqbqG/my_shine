@@ -1,0 +1,6 @@
+sudo apt install mysql-server
+sudo mysql_secure_installation --- настройка окружения
+sudo mysql
+SELECT user,authentication_string,plugin,host FROM mysql.user; --- просмотреть метор аунтификации для каждого пользователя
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; --- изменение пароля и настроек доступа для root 
+FLUSH PRIVILEGES; --- применить внесенные изменения
