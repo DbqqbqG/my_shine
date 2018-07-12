@@ -1,1 +1,0 @@
-alias myip='wget -qO - eth0.me';alias ins='sudo apt install';alias del='sudo apt autoremove';alias cls='clear';alias h='htop';alias t='tree'
