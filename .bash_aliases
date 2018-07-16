@@ -40,6 +40,6 @@ alias ga='sudo git add --a'
 alias gc='sudo git commit -m'
 alias gh='sudo git push'
 alias gl='sudo git pull'
-alias gclone='sudo git clone https://github.com/dbqqbqg/'
+
 #WGET
 alias dsite='wget -e robots=off --recursive --no-clobber --page-requisites --convert-links --no-parent'
