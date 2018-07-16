@@ -34,9 +34,12 @@ alias startnewOS='sudo apt update;sudo apt upgrage;sudo apt full-upgrade;sudo ap
 ############################
 #######       WEB    #########
 ################################
+#GIT
 alias gss='git status'
-alias ga='git add --a'
-alias gc='git commit -m'
-alias gh='git push'
-alias gl='git pull'
+alias ga='sudo git add --a'
+alias gc='sudo git commit -m'
+alias gh='sudo git push'
+alias gl='sudo git pull'
+alias gclone='sudo git clone https://github.com/dbqqbqg/'
+#WGET
 alias dsite='wget -e robots=off --recursive --no-clobber --page-requisites --convert-links --no-parent'
