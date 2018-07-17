@@ -1,0 +1,48 @@
+Определение класса начинается с ключевого слова class, затем открытие фигурных скобок и
+помещение в них методов и классов.
+    -СВОЙСТВАМИ называются константы и переменные
+    -МЕТОДАМИ называются функции
+<?php
+class NewPage {
+    // Принято называть имена классов в верхнем регистре
+    // Клас запрещенно прерывать
+    // Создают для класса отдельный файл с его именем
+// Свойства
+    public $header = 'HEADER';
+    public $content;
+    public $footer;
+    public $adm = 'You GOD';
+// Конструктор класса, 
+    выполняется в момент создание класса
+
+    function __construct() {
+        echo 'dat com';
+    }
+
+
+// Методы свойства
+    function view_header() { // Создание метода
+        echo $this->header; // Вызов свойства внутри метода класса
+    }
+
+    function foo() {
+        $var = 1;
+        $var2 = 'G';
+
+        $this->view_header( $var, $var2 );
+    }
+}
+
+// Object
+$index = new NewPage(); // Создание объекта класса
+                            // Object начинается с ключевого слова new
+    $admin = new NewPage();
+        $admin->header = 'Admin'; // Присвоение новых значений для объекта admin к свойству HEADER
+        $admin->adm = 'Impossible';
+        echo $admin->adm;
+
+        $index->view_header(); // Получение доступа к методу
+        $index->foo();
+
+    $view = new NewPage();
+?>
