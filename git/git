@@ -1,0 +1,25 @@
+Система контроля версий GIT
+
+git init - Инициализация репозитория
+
+git config --global user.name ""
+git config --global email.name ""
+    # Первая стадия
+git status
+git log
+    # Вторая стадия 
+git add --a
+git rm --cached NAME_FILE
+    # Третья стадия
+git commit -m ""
+git reset --hard HEAD~ - Убрать последний коммит
+git reset --hard <hash code commit> - Откат к коммиту
+    #
+git remote rename origin NEW_NAME
+    #
+git push
+git pull origin master
+git fetch
+    #
+git tag -a ""
+git clone LINK.git
