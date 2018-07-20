@@ -46,5 +46,5 @@ alias dsite='wget -e robots=off --recursive --no-clobber --page-requisites --con
 ############################
 #######    SERVER    #########
 ################################
-alias govps='ssh -i ~/.ssh/dbqqbq dbqqbq@35.204.163.79'
-alias govps2='ssh -i ~/.ssh/dbqqbq2 dbqqbq@35.204.163.79'
+alias govps='ssh -i ~/.ssh/hello dbqqbq@35.204.163.79'
+alias govps2='ssh -i ~/.ssh/hello dbqqbq@35.204.163.79'
