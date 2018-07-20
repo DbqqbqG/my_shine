@@ -1,0 +1,10 @@
+alias start-1='sudo apt update && sudo apt upgrade'
+alias start-2='sudo apt install apache2 php php-mysql mysql-server 
+phpmyadmin mcrypt php-mcrypt php-curl libapache2-mod-php image magick'
+
+
+useradd NEW-USER
+passwd NEW-USER
+/etс/group
+	sudo:x:27:NEW-USER
+

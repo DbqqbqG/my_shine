@@ -1,0 +1,4 @@
+/etc/postfix/main.cf
+
+mydestination = mail.$mydomain
+
