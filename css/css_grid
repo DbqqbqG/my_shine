@@ -7,7 +7,7 @@
         grid-row-gap: ; /* Растояние между строк */
         grid-gap: ; /* Растояние между строками и столбцами */
         grid-auto-flow: column; /* Выстроивает колонки в строку */
-                        row - Выстроит блоки в строку
+                        row - Выстроит блоки в столбик
     grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
     grid-template-columns: repeat(auto-fit, minmax(20px, 1fr ));
     }
