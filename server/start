@@ -1,7 +1,8 @@
 alias start-1='sudo apt update && sudo apt upgrade'
 alias start-2='sudo apt install apache2 php php-mysql mysql-server 
 phpmyadmin mcrypt php-mcrypt php-curl libapache2-mod-php image magick'
-
+alias start-3='phpenmod mcrypt && a2enmod ssl && a2enmod rewrite && service apache2 restart'
+alias start-4='sudo a2enmod php7.0 && install php7.0-mbstringq'
 
 useradd NEW-USER
 passwd NEW-USER
